@@ -37,7 +37,7 @@ TSIR.app - the unforced TSIR model with demographic an environmental stochastici
 
 Tar-ball is Mac/Linux source, zip-file is widows. 
 
-To INSTALL download to local disk and do
+To INSTALL download to local disk and do (depending on OS)
 
 > install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
 
