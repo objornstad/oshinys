@@ -12,7 +12,7 @@ NB.app - Nicholson-Bailey Host-Parasitoid model
 
 May.app - May et al's Negative-Binomial parasitoid-host model
 
-Ricker.app - The Ricker ("discrete logisitc model")
+Ricker.app - The Ricker ("discrete logistic") model
 
 RM.app - Rosenzweig-MacArthur Predator-Prey model
 
