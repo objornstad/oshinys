@@ -1,5 +1,14 @@
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
+The pakage REQUIRES 
+
+shiny,
+    scatterplot3d,
+    deSolve,
+    phaseR
+
+from CRAN to run.
+
 The current models are:
 
 LPA.app - LPA Tribolium model
