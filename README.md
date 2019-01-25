@@ -28,3 +28,6 @@ TSIR.app - the unforced TSIR model with demographic an environmental stochastici
 Tar-ball is Mac/Linux source, zip-file is widows. 
 
 To install download to local disk and "install package from archive file"
+
+
+All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
