@@ -24,3 +24,7 @@ SIR.app - the unforced SIR model
 
 TSIR.app - the unforced TSIR model with demographic an environmental stochasticity
 
+
+Tar-ball is Mac/Linux source, zip-file is widows. 
+
+To install download to local disk and "install package from archive file"
