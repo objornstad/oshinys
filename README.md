@@ -5,7 +5,8 @@ The pakage REQUIRES
 shiny,
     scatterplot3d,
     deSolve,
-    phaseR
+    phaseR,
+    polspline
 
 from CRAN to run.
 
@@ -36,7 +37,25 @@ TSIR.app - the unforced TSIR model with demographic an environmental stochastici
 
 Tar-ball is Mac/Linux source, zip-file is widows. 
 
-To install download to local disk and "install package from archive file"
+To INSTALL download to local disk and do
+
+> install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
+
+or
+
+> install.packages("~/yourpath/oshinys_0.1-1.zipz", repos = NULL, type = "source")
+
+Then install required packages from CRAN:
+
+> install.packages("shiny")
+
+> install.packages("deSolve")
+
+> install.packages("scatterplot3d")
+
+> install.packages("polspline")
+
+> install.packages("phaseR")
 
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
