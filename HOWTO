@@ -29,3 +29,7 @@ This should start your browser with the shinyApp running. If you can't see any g
 to maximize the browser window.
 
 
+If you have devtools installed you can alternatively install directly from github source:
+
+require('devtools')
+devtools::install_github('objornstad/oshinys/source/oshinys')
