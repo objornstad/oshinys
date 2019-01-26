@@ -31,29 +31,9 @@ SIR.app - the unforced SIR model
 TSIR.app - the unforced TSIR model with demographic an environmental stochasticity
 
 
-The tar.gz is Mac/Linux compatible,  .zip is widows compatible. 
-
-To INSTALL download to your local disk and do (depending on OS) within R or Rstudio
-
-> install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
-
-or
-
-> install.packages("~/yourpath/oshinys_0.1-1.zip", repos = NULL, type = "source")
-
-Then install required packages from CRAN:
-
-> install.packages("shiny")
-
-> install.packages("deSolve")
-
-> install.packages("scatterplot3d")
-
-> install.packages("polspline")
-
-> install.packages("phaseR")
+The HOWTO details how to get the package installed and any shinyApp up and running
 
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
 
-To change or modify any of the apps edit the allapps3.R source-file in the source/oshinys/R/ directory
+To change or modify any of the apps, edit the allapps3.R source-file in the "source/oshinys/R/directory" please update me with any improvements (as per the CC-BY-NC lisence)
