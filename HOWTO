@@ -8,15 +8,7 @@ or
 
 Then install the additional required packages from CRAN:
 
-> install.packages("shiny")
-
-> install.packages("deSolve")
-
-> install.packages("scatterplot3d")
-
-> install.packages("polspline")
-
-> install.packages("phaseR")
+> install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
 
 Onced you have done the first insallation you can LAUNCH any app -- for example the Rozenzweig-MacArthur model -- 
 through Starting R or Rstudio and type:
@@ -29,7 +21,7 @@ This should start your browser with the shinyApp running. If you can't see any g
 to maximize the browser window.
 
 
-If you have devtools installed you can alternatively install directly from github source:
+If you have devtools installed you can alternatively build the package directly from the github source:
 
 require('devtools')
 devtools::install_github('objornstad/oshinys/source/oshinys')
