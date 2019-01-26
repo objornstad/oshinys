@@ -1,4 +1,4 @@
-To INSTALL download to local disk and do (depending on OS) from within R or Rstudio:
+To INSTALL download to your local disk either the tar.gz or zip file (depending on OS) and from within R or Rstudio type:
 
 > install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
 
@@ -6,7 +6,7 @@ or
 
 > install.packages("~/yourpath/oshinys_0.1-1.zip", repos = NULL, type = "source")
 
-Then install required packages from CRAN:
+Then install the additionalrequired packages from CRAN:
 
 > install.packages("shiny")
 
