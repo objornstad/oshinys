@@ -8,11 +8,11 @@ The package REQUIRES shiny,
 
 The current models are:
 
-LPA.app - LPA Tribolium model with 2D and 3D phaseplane
+LPA.app - LPA Tribolium model with a 2D and 3D phase plane
 
-LVcomp.app - Lotka-Volterra competion model with phaseplane and isoclines
+LVcomp.app - Lotka-Volterra competion model with phase plane and isoclines
 
-LVpred.app - Lotka-Volterra predation model with phaseplane and isoclines
+LVpred.app - Lotka-Volterra predation model with phase plane and isoclines
 
 NB.app - Nicholson-Bailey Host-Parasitoid model
 
@@ -20,16 +20,16 @@ May.app - May et al's Negative-Binomial parasitoid-host model
 
 Ricker.app - The Ricker ("discrete logistic") model
 
-RM.app - Rosenzweig-MacArthur Predator-Prey model with phaseplane and isoclines
+RM.app - Rosenzweig-MacArthur Predator-Prey model with phase plane and isoclines
 
-SEIR.app - the seasonally forced SEIR model in time and in the phaseplane
+SEIR.app - the seasonally forced SEIR model in time and in the phase plane
 
-SEIRS.app - the unforced SEIRS model in time and in the phaseplane with ressonant periodicity calculations
+SEIRS.app - the unforced SEIRS model in time and in the phase plane with ressonant periodicity calculations
 
-SIR.app - the unforced SIR model in time and in the phaseplane with R0 calculations
+SIR.app - the unforced SIR model in time and in the phase plane with R0 calculations
 
 TSIR.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
-the phaseplane and with simulated and transfer function derived periodograms
+the phase plane and with simulated and transfer function derived periodograms
 
 
 The HOWTO details how to get the package installed and any shinyApp up and running
