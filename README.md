@@ -3,7 +3,7 @@ The oshinys R-package contains shinyApps of a variety of ecological and epidemio
 The package REQUIRES shiny,
     scatterplot3d,
     deSolve,
-    phaseR,
+    phaseR and
     polspline R-packages from CRAN to run.
 
 The current models are:
