@@ -32,7 +32,7 @@ TSIR.app - the unforced TSIR model with demographic an environmental stochastici
 the phase plane and with simulated and transfer function derived periodograms
 
 
-The HOWTO details how to get the package installed and any shinyApp up and running
+The HOWTO details how to get the package installed and any the shinyApp's up and running
 
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
