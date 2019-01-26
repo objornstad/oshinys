@@ -60,4 +60,4 @@ Then install required packages from CRAN:
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
 
-To change or modify use the allapps3.R-source file inn the source/oshinys/R/ directory
+To change or modify any of the apps edit the allapps3.R source-file in the source/oshinys/R/ directory
