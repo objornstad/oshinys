@@ -43,7 +43,7 @@ To INSTALL download to local disk and do (depending on OS)
 
 or
 
-> install.packages("~/yourpath/oshinys_0.1-1.zipz", repos = NULL, type = "source")
+> install.packages("~/yourpath/oshinys_0.1-1.zip", repos = NULL, type = "source")
 
 Then install required packages from CRAN:
 
