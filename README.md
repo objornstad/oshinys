@@ -1,6 +1,6 @@
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
-The pakage REQUIRES shiny,
+The package REQUIRES shiny,
     scatterplot3d,
     deSolve,
     phaseR,
