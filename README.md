@@ -1,14 +1,10 @@
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
-The pakage REQUIRES 
-
-shiny,
+The pakage REQUIRES shiny,
     scatterplot3d,
     deSolve,
     phaseR,
-    polspline
-
-from CRAN to run.
+    polspline R-packages from CRAN to run.
 
 The current models are:
 
@@ -35,9 +31,9 @@ SIR.app - the unforced SIR model
 TSIR.app - the unforced TSIR model with demographic an environmental stochasticity
 
 
-Tar-ball is Mac/Linux source, zip-file is widows. 
+The tar.gz is Mac/Linux compatible,  .zip is widows compatible. 
 
-To INSTALL download to local disk and do (depending on OS)
+To INSTALL download to your local disk and do (depending on OS) within R or Rstudio
 
 > install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
 
