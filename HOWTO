@@ -6,7 +6,7 @@ or
 
 > install.packages("~/yourpath/oshinys_0.1-1.zip", repos = NULL, type = "source")
 
-Then install the additionalrequired packages from CRAN:
+Then install the additional required packages from CRAN:
 
 > install.packages("shiny")
 
