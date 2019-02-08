@@ -8,15 +8,19 @@ The package REQUIRES shiny,
     
 ________________________________________
 
-If you have devtools installed you can  build the package directly from the github source:
+If you have devtools installed you can  build the package directly from the github source within R:
 
-require('devtools')
+   require('devtools')
 
-devtools::install_github('objornstad/oshinys/source/oshinys')
+   devtools::install_github('objornstad/oshinys/source/oshinys')
 
-install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
+   install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
 
-Then launch any app from within R
+Then launch any app from within R, for example:
+
+   require('oshinys')
+
+   RM.app
 
 If you don't have devtools installed; see HOWTO
 ________________________________________
