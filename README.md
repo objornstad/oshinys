@@ -6,7 +6,9 @@ The package REQUIRES shiny,
     phaseR and
     polspline R-packages from CRAN to run.
     
-If you have devtools installed you can alternatively build the package directly from the github source:
+________________________________________
+
+If you have devtools installed you can  build the package directly from the github source:
 
 require('devtools')
 
@@ -43,6 +45,7 @@ the phase plane and with simulated and transfer function derived periodograms
 
 The HOWTO details how to get the package installed and any of the shinyApp's up and running
 
+________________________________
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
 
