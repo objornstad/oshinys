@@ -5,6 +5,15 @@ The package REQUIRES shiny,
     deSolve,
     phaseR and
     polspline R-packages from CRAN to run.
+    
+If you have devtools installed you can alternatively build the package directly from the github source:
+
+require('devtools')
+
+devtools::install_github('objornstad/oshinys/source/oshinys')
+
+Otherwise see HOWTO
+________________________________________
 
 The current models are:
 
