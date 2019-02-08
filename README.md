@@ -14,7 +14,11 @@ require('devtools')
 
 devtools::install_github('objornstad/oshinys/source/oshinys')
 
-Otherwise see HOWTO
+install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
+
+Then launch any app from within R
+
+If you don't have devtools installed; see HOWTO
 ________________________________________
 
 The current models are:
@@ -41,9 +45,6 @@ SIR.app - the unforced SIR model in time and in the phase plane with R0 calculat
 
 TSIR.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
 the phase plane and with simulated and transfer function derived periodograms
-
-
-The HOWTO details how to get the package installed and any of the shinyApp's up and running
 
 ________________________________
 
