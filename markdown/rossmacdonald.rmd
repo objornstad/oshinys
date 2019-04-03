@@ -1,13 +1,10 @@
 ---
-title: "Ross-Macdonald model with embedded ShinyApp"
+title: "ShinyApp Ross-Macdonald model"
 author: Ottar N. Bjornstad
 output: html_document
 runtime: shiny
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 This Rmarkdown of the Ross-Macdonald model was written by Ottar N. Bjornstad and is released with a CC-BY-NC lisence for anyone to improve and re-share (acknowledging origin). Please email me a copy of update (onb1 at psu dot edu).
 
 The basic equations are:
