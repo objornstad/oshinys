@@ -7,6 +7,8 @@ runtime: shiny
 
 This Rmarkdown of the SIR model was written by Ottar N. Bjornstad and is released with a CC-BY-NC lisence for anyone to improve and re-share (acknowledging origin). Please email me a copy of update (onb1 at psu dot edu).
 
+The app requires the shiny, deSolve and phaseR packages to be installed to run.
+
 The basic equations for the flow of hosts between **S**usceptible, **I**nfectious and **R**ecovered
  compartments are:
 \begin{align}
@@ -48,9 +50,6 @@ and the S-isocline is $I= \mu (1/S-1)/\beta$.
 The  shiny app:
 
 ```{r, echo=FALSE}
-require(shiny)
-require(deSolve)
-require(phaseR)
 require(shiny)
 require(deSolve)
 require(phaseR)
