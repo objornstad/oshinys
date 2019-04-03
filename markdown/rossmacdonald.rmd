@@ -21,7 +21,7 @@ $$
 y^*=\frac{\gamma x}{(a b m)(1-x)}\\
 y^* =a c x / (a c x + \mu)
 $$
-The basic reproductive ratio ($R_0$) and endemic equilibrium ($\{x^*, y^*\}) are:
+The basic reproductive ratio ($R_0$) and endemic equilibrium ($\{x^*, y^*\}$) are:
 $$
 R_0 = m a^2 b c / \mu \gamma\\
 x^*=(R_0-1)/[R_0 + a c / \mu]\\
