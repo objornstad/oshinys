@@ -7,6 +7,8 @@ runtime: shiny
 
 This Rmarkdown of the Rosenzweig-MacArthur predator-prey model was written by Ottar N. Bjornstad and is released with a CC-BY-NC lisence for anyone to improve and re-share (acknowledging origin). Please email me a copy of update (onb1 at psu dot edu).
 
+The app requires the shiny, deSolve and phaseR packages to be installed to run.
+
 The basic equations for the consumer-resource interaction between prey (N)  and predators (P) are:
 \begin{align}
     \frac{dN}{dt} =& \underbrace{r N (\frac{K-N}{K})}_{\mbox{N growth}} - \underbrace{\frac{a N P}{c + P}}_{\mbox{predation}}\\
