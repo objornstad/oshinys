@@ -1,3 +1,15 @@
+NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current Apps are
+
+rosenzweigmacarthur.rmd
+
+rossmacdonald.rmd
+
+seasonalseir.rmd
+
+sir.rmd
+
+
+
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
 The package REQUIRES shiny,
