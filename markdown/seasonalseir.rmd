@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 This Rmarkdown of the seasonally forced SEIR model was written by Ottar N. Bjornstad and is released with a CC-BY-NC lisence for anyone to improve and re-share (acknowledging origin). Please email any update to [onb1 at psu dot edu].
 
+The app requires the shiny, deSolve and phaseR packages to be installed to run.
+
 The basic equations for the flow of hosts between **S**usceptible, **E**xposed, **I**nfectious and **R**ecovered
  compartments are:
 
