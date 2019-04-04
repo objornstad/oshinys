@@ -1,5 +1,9 @@
 NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current Apps are
 
+lotkavolterracompetition.rmd
+
+lotkavolterrapredation.rmd
+
 rosenzweigmacarthur.rmd
 
 rossmacdonald.rmd
