@@ -4,6 +4,8 @@ lotkavolterracompetition.rmd
 
 lotkavolterrapredation.rmd
 
+lpatribolium.rmd
+
 rosenzweigmacarthur.rmd
 
 rossmacdonald.rmd
