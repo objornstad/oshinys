@@ -27,6 +27,7 @@ The package REQUIRES shiny,
     phaseR and
     polspline R-packages from CRAN to run.
     
+Thes source of the Apps are in /source/oshinys
 ________________________________________
 
 IF you have devtools installed you can  build the package directly from the github source within R:
