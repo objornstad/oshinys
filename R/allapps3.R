@@ -507,8 +507,8 @@ mainPanel(tabsetPanel(
             helpText("MODEL:"),
           helpText("Host $$H_t = R H_{t-1} (1 - \\mbox{exp}(- a P_{t-1}))$$"),
           helpText("Parasitoid $$P_t = R H_{t-1} \\mbox{exp}(- a P_{t-1})$$"),
-          helpText("Equilibria $$H^* = \\frac{- \\mbox{log}(R)}{a (R-1)}, 
-            P^* = \\frac{- \\mbox{log}(R)}{a}$$"))),
+          helpText("Equilibria $$H^* = \\frac{\\mbox{log}(R)}{a (R-1)}, 
+            P^* = \\frac{\\mbox{log}(R)}{a}$$"))),
           helpText("REFERENCE: Nicholson AJ, Bailey VA (1935) The balance of animal populations. 
             Proceedings of the Zoological Society of London 3: 551-598"),
            helpText(eval(Attr))
@@ -641,7 +641,7 @@ ui = fluidPage(
   tags$head(tags$style(
     HTML('
          #sidebar1 {
-            background-color: #D3D3D3;
+            background-color: #ECECEC;
         }
     
     #sidebar2 {
