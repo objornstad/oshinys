@@ -6,6 +6,8 @@ lotkavolterrapredation.rmd
 
 lpatribolium.rmd
 
+parasitoidhost.rmd
+
 rosenzweigmacarthur.rmd
 
 rossmacdonald.rmd
