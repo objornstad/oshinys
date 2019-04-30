@@ -17,6 +17,7 @@ seasonalseir.rmd
 sir.rmd
 
 
+______________________________________
 
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
