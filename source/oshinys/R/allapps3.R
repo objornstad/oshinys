@@ -469,8 +469,8 @@ server = function(input, output) {
    P[1] = P0 #Initiating the host series
 
    for(t in 2:T){
-     H[t] = R * H[t-1] * (1+ a * P[t-1])^(-k)
-     P[t] = R * H[t-1] * (1-(1+ a * P[t-1])^(-k))
+     H[t] = R * H[t-1] * (1+ a * P[t-1]/k)^(-k)
+     P[t] = R * H[t-1] * (1-(1+ a * P[t-1]/k)^(-k))
      if(P[t-1]==0) break
    } #end of loop
 
