@@ -1,4 +1,4 @@
-To INSTALL download to your local disk either the tar.gz or zip file (depending on OS) and from within R or Rstudio type:
+To INSTALL download to your local disk either the tar.gz (mac, unix) or zip file (windows) depending on OS and from within R or Rstudio type:
 
 > install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
 
