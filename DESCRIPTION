@@ -1,7 +1,7 @@
 Package: oshinys
 Title: Shiny Apps to simulate various ecological models
-Version: 0.1-1
-Date: 19-01-18
+Version: 0.1-2
+Date: 01-05-19
 Author: Ottar N. Bjornstad [aut, cre]
 Maintainer: Ottar N. Bjornstad <onb1@psu.edu>
 Authors@R: person("Ottar", "Bjornstad", email = "onb1@psu.edu", role = c("aut", "cre"))
