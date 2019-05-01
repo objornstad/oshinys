@@ -401,6 +401,7 @@ points(Nstar,Pstar, pch = 19)
 #' @export
 May.app=shinyApp(
 # This creates the User Interface (UI)
+# This creates the User Interface (UI)
 ui = pageWithSidebar(
 headerPanel("May's Parasitoid-host Model"),
 sidebarPanel(
@@ -419,7 +420,8 @@ numericInput("Tmax", "Tmax:", 100,
 ),
 mainPanel(tabsetPanel(
   tabPanel("Simulation", plotOutput("plot1", height = 500)),
-     tabPanel("Details", 
+  tabPanel("Phase plane", plotOutput("plot2", height = 500)),
+  tabPanel("Details", 
     withMathJax(
          helpText("MODEL:"),
              helpText("Host $$H_t = R H_{t-1} (1 + a P_{t-1})^k$$"),
@@ -447,8 +449,8 @@ server = function(input, output) {
    P[1] = P0 #Initiating the host series
 
    for(t in 2:T){
-     H[t] = R * H[t-1] * (1+ a * P[t-1])^(-k)
-     P[t] = R * H[t-1] * (1-(1+ a * P[t-1])^(-k))
+     H[t] = R * H[t-1] * (1+ a * P[t-1]/k)^(-k)
+     P[t] = R * H[t-1] * (1-(1+ a * P[t-1]/k)^(-k))
      if(P[t-1]==0) break
    } #end of loop
 
@@ -475,6 +477,17 @@ server = function(input, output) {
         pch=c(1,1),
         col=c("black", "red"))
    })
+
+output$plot2 <- renderPlot({
+
+    sim= NB(R=input$R, a=input$a, k=input$k, H0=input$H0, P0=input$P0, T=input$Tmax)
+    time = 1:input$Tmax
+   
+    plot(sim$H, sim$P, type= "b",xlab = "Host", ylab = "Parasitoid")
+    #Pstar=input$k*(input$R^(1/input$k)-1)/input$a
+    #Hstar=Pstar*input$R/(input$R-1)
+    #points(Hstar, Pstar, col=2, pch=19)
+   })
   }
 )
 
@@ -491,7 +504,7 @@ headerPanel("Nicholson-Bailey Model"),
 sidebarPanel(
 sliderInput("R", "Growth rate (R):", 1.1,
               min = 1, max = 2, step=.01),
-sliderInput("a", "Search efficiency (a):", 0.1,
+sliderInput("a", "Search efficiency (a):", 0.03,
               min = 0, max = .5),
 numericInput("P0", "Initial parasitoid:", 10,
               min = 1, max = 100),
@@ -502,6 +515,7 @@ numericInput("Tmax", "Tmax:", 100,
 ),
 mainPanel(tabsetPanel(
   tabPanel("Simulation", plotOutput("plot1", height = 500)),
+  tabPanel("Phase plane", plotOutput("plot2", height = 500)),
   tabPanel("Details",
     withMathJax(
             helpText("MODEL:"),
@@ -559,6 +573,18 @@ server = function(input, output) {
         pch=c(1,1),
         col=c("black", "red"))
    })
+
+
+  output$plot2 <- renderPlot({
+
+    sim= NB(R=input$R, a=input$a, H0=input$H0, P0=input$P0, T=input$Tmax)
+    time = 1:input$Tmax
+    Hstar=log(input$R)/(input$a*(input$R-1))
+    Pstar=log(input$R)/input$a
+    plot(sim$H, sim$P, type= "b",xlab = "Host", ylab = "Parasitoid")
+    points(Hstar, Pstar, col=2, pch=19)
+   })
+
   }
 )
 
