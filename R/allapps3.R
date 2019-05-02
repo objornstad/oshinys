@@ -200,8 +200,9 @@ column(8,  tabsetPanel(
             helpText("Species 2 $$\\frac{dN_2}{dt} = r_2 N_2 (\\frac{K_2-N_2-\\alpha_{21} N_1}{K_2})$$"),
           helpText("N_1-isocline $$N_2 = \\frac{K_1 - N_1}{\\alpha_{12}}$$"),
           helpText("N_2-isocline $$N_2 = K_2 - \\alpha_{21} N_1$$"),
-          helpText("Equilibria $$N_1^* = \\frac{K_1-\\alpha_{12} K_2}{1-\\alpha_{12} \\alpha_{21},
-           N_2^* = \\frac{K_2-\\alpha_{21} K_1}{1-\\alpha_{12} \\alpha_{21}}$$")),
+          helpText("Equilibria:"),
+          helpText("$$N_1^* = \\frac{K_1-\\alpha_{21} K_2}{1-\\alpha_{12} \\alpha_{21}}$$"),
+          helpText("$$N_2^* = \\frac{K_2-\\alpha_{21} K_1}{1-\\alpha_{12} \\alpha_{21}}$$")),
            helpText(eval(Attr))
            )
   )
@@ -407,8 +408,8 @@ mainPanel(tabsetPanel(
   tabPanel("Details", 
     withMathJax(
          helpText("MODEL:"),
-             helpText("Host $$H_t = R H_{t-1} (1 + a P_{t-1})^k$$"),
-          helpText("Parasitoid $$P_t = R H_{t-1} (1-(1 + a P_{t-1})^k)$$"),
+             helpText("Host $$H_t = R H_{t-1} (1 + a P_{t-1}/k)^{-k}$$"),
+          helpText("Parasitoid $$P_t = R H_{t-1} (1-(1 + a P_{t-1}/k)^{-k})$$"),
           helpText("REFERENCE: May RM (1978) Host-parasitoid systems in patchy 
             environments: a phenomenological model. J Anim Ecol 47: 833-843"),
            helpText(eval(Attr))
