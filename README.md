@@ -27,7 +27,7 @@ The package REQUIRES shiny,
     phaseR and
     polspline R-packages from CRAN to run.
     
-The source of the Apps are in /source/oshinys/R/allaps3.r
+The source of the Apps are in /source/R/allaps3.r
 ________________________________________
 
 IF you have devtools installed you can  build the package directly from the github source within R:
@@ -35,7 +35,7 @@ IF you have devtools installed you can  build the package directly from the gith
 
 require('devtools')
 
-   devtools::install_github('objornstad/oshinys/source/oshinys')
+   devtools::install_github('objornstad/oshinys/source/')
 
    install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
 
@@ -53,27 +53,29 @@ ________________________________________
 
 The current models are:
 
-LPA.app - LPA Tribolium model with a 2D and 3D phase plane
+lpatribolium.app - LPA Tribolium model with a 2D and 3D phase plane
 
-LVcomp.app - Lotka-Volterra competion model with phase plane and isoclines
+lotkavolterracompetition.app - Lotka-Volterra competion model with phase plane and isoclines
 
-LVpred.app - Lotka-Volterra predation model with phase plane and isoclines
+lotkavolterrapredation.app - Lotka-Volterra predation model with phase plane and isoclines
 
-NB.app - Nicholson-Bailey Host-Parasitoid model
+negbinparasitoid.app - May's Negative-Binomial parasitoid-host model
 
-May.app - May et al's Negative-Binomial parasitoid-host model
+nicholsonbailey.app - Nicholson-Bailey Host-Parasitoid model
 
-Ricker.app - The Ricker ("discrete logistic") model
+ricker.app - The Ricker ("discrete logistic") model
 
-RM.app - Rosenzweig-MacArthur Predator-Prey model with phase plane and isoclines
+rosenzweigmacarthur.app - Rosenzweig-MacArthur Predator-Prey model with phase plane and isoclines
 
-SEIR.app - the seasonally forced SEIR model in time and in the phase plane
+rossmacdonald.App - A simple Ross-Macdonald type malaria model
 
-SEIRS.app - the unforced SEIRS model in time and in the phase plane with ressonant periodicity calculations
+seir.app - the seasonally forced SEIR model in time and in the phase plane
 
-SIR.app - the unforced SIR model in time and in the phase plane with R0 calculations
+seirs.app - the unforced SEIRS model in time and in the phase plane with ressonant periodicity calculations
 
-TSIR.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
+sir.app - the unforced SIR model in time and in the phase plane with R0 calculations
+
+tsir.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
 the phase plane and with simulated and transfer function derived periodograms
 
 ________________________________
