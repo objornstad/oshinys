@@ -1,23 +1,3 @@
-NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current Apps are
-
-lotkavolterracompetition.rmd
-
-lotkavolterrapredation.rmd
-
-lpatribolium.rmd
-
-parasitoidhost.rmd
-
-rosenzweigmacarthur.rmd
-
-rossmacdonald.rmd
-
-seasonalseir.rmd
-
-sir.rmd
-
-
-______________________________________
 
 The oshinys R-package contains shinyApps of a variety of ecological and epidemiological models. 
 
@@ -45,7 +25,7 @@ THEN launch any app from within R, for example:
 
 require('oshinys')
 
-   RM.app
+   rosenzweigmacarthur.app
 
 
 IF you don't have devtools installed; see HOWTO
@@ -77,6 +57,25 @@ sir.app - the unforced SIR model in time and in the phase plane with R0 calculat
 
 tsir.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
 the phase plane and with simulated and transfer function derived periodograms
+
+NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current Apps are
+
+lotkavolterracompetition.rmd
+
+lotkavolterrapredation.rmd
+
+lpatribolium.rmd
+
+parasitoidhost.rmd
+
+rosenzweigmacarthur.rmd
+
+rossmacdonald.rmd
+
+seasonalseir.rmd
+
+sir.rmd
+______________________________________
 
 ________________________________
 
