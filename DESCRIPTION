@@ -1,11 +1,11 @@
 Package: oshinys
-Title: Shiny Apps to Simulate Various Ecological Models
-Version: 0.1-2
-Date: 2019-05-01
+Title: Shiny Apps to Simulate Various Ecological and Epidemiological Models
+Version: 0.2-1
+Date: 2019-05-02
 Author: Ottar N. Bjornstad [aut, cre]
 Maintainer: Ottar N. Bjornstad <onb1@psu.edu>
-Authors@R: c(person(c("Ottar", "N."), "Bjornstad", email = "onb1@psu.edu", role = c("aut", "cre"))
-Description: Shiny Apps to simulate various ecological models.
+Authors@R: person(c("Ottar", "N."), "Bjornstad", email = "onb1@psu.edu", role = c("aut", "cre"))
+Description: Shiny Apps to simulate various ecological and epidemiological models. Current models are: lpatribolium.app - LPA Tribolium model; lotkavolterracompetition.app - Lotka-Volterra competition model; lotkavolterrapredation.app - Lotka-Volterra predation model; nicholsonbailey.app - Nicholson-Bailey Host-Parasitoid model; negbinparasitoid.app - May's Negative-Binomial parasitoid-host model; ricker.app - The Ricker ("discrete logisitc model"); rosenzweigmacarthur.app - Rosenzweig-MacArthur Predator-Prey model; rossmacdonald.App - A simple Ross-Macdonald type malaria model; SEIR.app - the seasonally forced SEIR model; SEIRS.app - the unforced SEIRS model; SIR.app - the unforced SIR model; TSIR.app - the unforced TSIR model with demographic an environmental stochasticity
 Depends:
     R (>= 3.2.0),
     shiny,

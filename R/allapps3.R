@@ -1,27 +1,10 @@
-#CURRENT APPS:
-#LPA - LPA Tribolium model
-#LVcomp - Lotka-Volterra competion model
-#LVpred - Lotka-Volterra predation model
-#NB - Nicholson-Bailey Host-Parasitoid model
-#May - May et al's Negative-Binomial parasitoid-host model
-#Ricker - The Ricker ("discrete logisitc model")
-#RM - Rosenzweig-MacArthur Predator-Prey model
-#SEIR - the seasonally forced SEIR model
-#SEIRS - the unforced SEIRS model
-#SIR - the unforced SIR model
-#TSIR - the unforced TSIR model with demographic an environmental stochasticity
-#
-#TO RUN: 
-#source("allapps3.R")
-#runApp(APP)
-
-Attr=c("ATTRIBUTION: This App was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.")
+Attr=c("ATTRIBUTION: This App was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin: https://github.com/objornstad/oshinys")
 
 #' Launch a shiny-app simulating the LPA model
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{LPA.app}
+#' \dontrun{lpatribolium.app}
 #' @export
 #' @importFrom graphics abline curve legend lines plot title
 #' @importFrom shiny renderPlot
@@ -29,7 +12,7 @@ Attr=c("ATTRIBUTION: This App was written by Ottar N. Bjornstad (onb1@psu.edu) a
 #' @importFrom phaseR flowField
 #' @importFrom scatterplot3d scatterplot3d
 #' @importFrom polspline lspec
-LPA.app=shinyApp(
+lpatribolium.app=shinyApp(
 # This creates the LPA User Interface (UI)
 ui = pageWithSidebar(
   tags$head(tags$style(
@@ -166,9 +149,9 @@ scatterplot3d(x=out[input$T[1]:input$T[2],1], y=out[input$T[1]:input$T[2],2],
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{LVcomp.app}
+#' \dontrun{lotkavolterracompetition.app}
 #' @export
-LVcomp.app=shinyApp(ui = fluidPage(
+lotkavolterracompetition.app=shinyApp(ui = fluidPage(
 # This creates the User Interface (UI)
   tags$head(tags$style(
     HTML('
@@ -289,9 +272,9 @@ lines(out[,2], out[,3], lwd=2)
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{LVpred.app}
+#' \dontrun{lotkavolterrapredation.app}
 #' @export
-LVpred.app=shinyApp(
+lotkavolterrapredation.app=shinyApp(
 # This creates the User Interface (UI)
 ui = fluidPage(
   tags$head(tags$style(
@@ -397,9 +380,9 @@ points(Nstar,Pstar, pch = 19)
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{May.app}
+#' \dontrun{negbinparasitoid.app}
 #' @export
-May.app=shinyApp(
+negbinparasitoid.app=shinyApp(
 # This creates the User Interface (UI)
 # This creates the User Interface (UI)
 ui = pageWithSidebar(
@@ -495,9 +478,9 @@ output$plot2 <- renderPlot({
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{NB.app}
+#' \dontrun{nicholsonbailey.app}
 #' @export
-NB.app=shinyApp(
+nicholsonbailey.app=shinyApp(
 # This creates the NB User Interface (UI)
 ui = pageWithSidebar(
 headerPanel("Nicholson-Bailey Model"),
@@ -594,7 +577,7 @@ server = function(input, output) {
 #' @examples
 #' \dontrun{Ricker.app}
 #' @export
-Ricker.app=shinyApp(
+ricker.app=shinyApp(
 # This creates the User Interface (UI)
 ui = pageWithSidebar(
 headerPanel("Ricker Model"),
@@ -659,9 +642,9 @@ lines(X[1:(input$Tmax-1)], X[2:input$Tmax], col = "red") # adding the line to co
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{RM.app}
+#' \dontrun{rosenzweigmacarthur.app}
 #' @export
-RM.app=shinyApp(
+rosenzweigmacarthur.app=shinyApp(
 # This creates the User Interface (UI)
 ui = fluidPage(
   tags$head(tags$style(
@@ -817,13 +800,101 @@ parameters=parms, system="two.dim", add=TRUE)
 }
 )
 
+#' Launch a shiny-app simulating the Ross-Macdonald malaria model
+#' @details
+#' Launch app for details
+#' @examples
+#' \dontrun{rossmacdonald.app}
+#' @export
+rossmacdonald.app=shinyApp(
+# This creates the User Interface (UI)
+ui <- pageWithSidebar(
+headerPanel(""),
+sidebarPanel(
+sliderInput("gamma", "gamma", 1/7,
+              min = 0, max = 1),
+sliderInput("a", "a", 1/4,
+              min = 0, max = 1),
+sliderInput("b", "b", 0.5,
+              min = 0, max = 1),
+sliderInput("c", "c", 0.9,
+              min = 0, max = 1),
+sliderInput("mu", "mu", 1/7,
+              min = 0, max = 1),
+sliderInput("m", "m", 10,
+              min = 1, max = 100)
+),
+
+mainPanel(tabsetPanel(
+  tabPanel("Phase plane", plotOutput("plot1", height = 500)),
+  tabPanel("Details",
+    withMathJax(
+                helpText("MODEL:"),
+                helpText("$$dx/dt = (a b Y / X) y (1-x) -\\gamma x$$"),
+            helpText("$$dy/dt = a c x (1-y)-  \\mu y,$$"),
+                div("where x is the fraction of infected humans, y is fraction of infected mosquitos, m = Y/X is mosquito-to-human ratio, gamma is human recovery rate, 1/mu is mosquito life expectancy, a is biting rate (1 / gonotrophic-cycle), b is human probability of getting infected by infected mosquito, c is probability of mosquito infection from infected human."),
+                helpText("ISOCLINES:"),
+                helpText("$$x^*=\\gamma x / (a b m)(1-x)$$"),
+                helpText("$$y^* =a c x / (a c x + \\mu)$$"),
+                helpText("$$R_0 = m a^2 b c / \\mu \\gamma$$"),
+            helpText("REFERENCE: Macdonald, G. (1957). The epidemiology and control of malaria. The Epidemiology and Control of Malaria. CaB direct"),
+       helpText(eval(Attr))
+)
+)
+)
+)
+),
+
+# This creates the 'behind the scenes' code (Server)
+server <- function(input, output) {
+grfn=function(t, y, parameters){
+  X=y[1]
+  Y=y[2]
+  with(as.list(parameters),{
+  dx=a*b*m*Y*(1-X)-gamma*X
+  dy=a*c*X*(1-Y)-mu*Y
+  gr=c(dx, dy)
+  list(gr)
+  })
+}
+
+
+  output$plot1 <- renderPlot({
+times=seq(0, 365*2, by=.1)
+
+parameters  = c(gamma = input$gamma, a =  input$a, b=input$b, c=input$c, mu=input$mu, m=input$m)
+start=c(0.01, 0.01)
+
+out=ode(y=start,
+  times=times,
+  func=grfn,
+  parms=parameters)
+
+  out=as.data.frame(out)
+
+with(as.list(parameters),{
+curve(gamma*x/((a*b*m)*(1-x)), 0,1, ylim=c(0,1), xlab="x", ylab="y")
+R0=m*a^2*b*c/(mu*gamma)
+title(paste ("R0=", round(R0,2)))
+curve(a*c*x/(a*c*x+mu), 0,1, add=TRUE, col="red")
+fld=flowField(grfn, xlim=c(0,1), ylim=c(0,1), 
+parameters=parameters, system="two.dim", add=TRUE,
+ylab="H", xlab="M")
+
+})
+points(out[,2], out[, 3])
+legend("topleft", c("H isocline", "M isocline", "Trajectory"), lty=c(1,1,0), col=c(1,2, 1), pch=c(NA,NA, 1))
+   })
+  }
+)
+
 #' Launch a shiny-app simulating the seasonal SEIR model
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{SEIR.app}
+#' \dontrun{seir.app}
 #' @export
-SEIR.app=shinyApp(
+seir.app=shinyApp(
 # This creates the User Interface (UI)
 ui = pageWithSidebar(
 headerPanel("Seasonally forced SEIR"),
@@ -955,9 +1026,9 @@ output$plot2 <- renderPlot({
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{SEIRS.app}
+#' \dontrun{seirs.app}
 #' @export
-SEIRS.app=shinyApp(
+seirs.app=shinyApp(
 # This creates the User Interface (UI)
 ui <- pageWithSidebar(
 headerPanel("SEIRS periodicity"),
@@ -1135,9 +1206,9 @@ rp=2*pi/Im(EE[WW])
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{SIR.app}
+#' \dontrun{sir.app}
 #' @export
-SIR.app=shinyApp(
+sir.app=shinyApp(
 # This creates the User Interface (UI)
 ui <- pageWithSidebar(
 headerPanel("The SIR model"),
@@ -1277,9 +1348,9 @@ ylab="I", xlab="S")
 #' @details
 #' Launch app for details
 #' @examples
-#' \dontrun{TSIR.app}
+#' \dontrun{tsir.app}
 #' @export
-TSIR.app=shinyApp(
+tsir.app=shinyApp(
 # This creates the User Interface (UI)
 ui = pageWithSidebar(
 headerPanel("Simulating with TSIR"),
