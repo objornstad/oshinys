@@ -10,25 +10,22 @@ The package REQUIRES shiny,
 The source of the Apps are in /source/R/allaps3.r
 ________________________________________
 
-IF you have devtools installed you can  build the package directly from the github source within R:
+Easisest way to insatt is from within R do:
 
+install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR", devtools))
 
 require('devtools')
 
-   devtools::install_github('objornstad/oshinys/source/')
-
-   install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
-
+devtools::install_github('objornstad/oshinys/source/')
 
 THEN launch any app from within R, for example:
 
-
 require('oshinys')
 
-   rosenzweigmacarthur.app
+runApp(rosenzweigmacarthur.app)
 
 
-IF you don't have devtools installed; see HOWTO
+IF you cant install devtools; see HOWTO for "manual" installation
 ________________________________________
 
 The current models are:
@@ -58,7 +55,9 @@ sir.app - the unforced SIR model in time and in the phase plane with R0 calculat
 tsir.app - the unforced TSIR model with demographic an environmental stochasticity in time and in 
 the phase plane and with simulated and transfer function derived periodograms
 
-NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current Apps are
+______________________________________
+
+NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current markdowns are
 
 lotkavolterracompetition.rmd
 
@@ -75,12 +74,11 @@ rossmacdonald.rmd
 seasonalseir.rmd
 
 sir.rmd
-______________________________________
 
 ________________________________
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
 
-To change or modify any of the apps, edit the allapps3.R source-file in the "source/oshinys/R/directory" please update me with any improvements (as per the CC-BY-NC lisence).
+To change or modify any of the apps, edit the allapps3.R source-file in the "source/oshinys/R/" directory please update me with any improvements (as per the CC-BY-NC lisence).
 
 [![CRAN Status](https://www.r-pkg.org/badges/version/oshinys)](https://cran.r-project.org/package=oshinys)
