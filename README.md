@@ -10,7 +10,7 @@ The package REQUIRES shiny,
 The source of the Apps are in /source/R/allaps3.r
 ________________________________________
 
-Easisest way to insatt is from within R do:
+Easisest way to install is from within R do:
 
 install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR", devtools))
 
@@ -25,7 +25,7 @@ require('oshinys')
 runApp(rosenzweigmacarthur.app)
 
 
-IF you cant install devtools; see HOWTO for "manual" installation
+IF you can't install devtools; see HOWTO for "manual" installation
 ________________________________________
 
 The current models are:
@@ -75,6 +75,7 @@ seasonalseir.rmd
 
 sir.rmd
 
+All these can be run from Rstudio.
 ________________________________
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
