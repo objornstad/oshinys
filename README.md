@@ -57,29 +57,15 @@ the phase plane and with simulated and transfer function derived periodograms
 
 ______________________________________
 
-NEW! I'm working to embed the Apps in standalone Rmarkdown documents posted in /markdown. Current markdowns are
+NEW! I'm working to embed the Apps in standalone Rmarkdown documents. See
 
-lotkavolterracompetition.rmd
+https://github.com/objornstad/ecomodelmarkdowns
 
-lotkavolterrapredation.rmd
-
-lpatribolium.rmd
-
-parasitoidhost.rmd
-
-rosenzweigmacarthur.rmd
-
-rossmacdonald.rmd
-
-seasonalseir.rmd
-
-sir.rmd
-
-All these can be run from Rstudio.
+All these can be launced without compilationn from Rstudio with "> Run Document".
 ________________________________
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
 
-To change or modify any of the apps, edit the allapps3.R source-file in the "source/oshinys/R/" directory please update me with any improvements (as per the CC-BY-NC lisence).
+When change, modify and improve any of the apps, please update me with any improvements (as per the CC-BY-NC lisence).
 
 [![CRAN Status](https://www.r-pkg.org/badges/version/oshinys)](https://cran.r-project.org/package=oshinys)
