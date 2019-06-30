@@ -61,7 +61,7 @@ NEW! I'm working to embed the Apps in standalone Rmarkdown documents. See
 
 https://github.com/objornstad/ecomodelmarkdowns
 
-All these can be launced without compilationn from Rstudio with "> Run Document".
+All these can be launced without compilation after downloading from Rstudio with "> Run Document".
 ________________________________
 
 All code was written by Ottar N. Bjornstad (onb1@psu.edu) and is licensed under the CC-BY-NC Creative Commons attribution-noncommercial license (http://creativecommons.org/licenses/by-nc/3.0/). Please share & remix non-commercially, mentioning its origin.
