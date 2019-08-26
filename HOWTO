@@ -1,21 +1,21 @@
 To INSTALL download to your local disk either the tar.gz (mac, unix) or zip file (windows) depending on OS and from within R or Rstudio type:
 
-> install.packages("/yourpath/oshinys_0.1-1.tar.gz", repos = NULL, type = "source")
+> install.packages("/yourpath/oshinys_0.2-3.tar.gz", repos = NULL, type = "source")
 
 or
 
-> install.packages("~/yourpath/oshinys_0.1-1.zip", repos = NULL, type = "source")
+> install.packages("~/yourpath/oshinys_0.2-3.zip", repos = NULL, type = "source")
 
 Then install the additional required packages from CRAN:
 
-> install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR"))
+> install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline"))
 
 Onced you have done the first insallation you can LAUNCH any app -- for example the Rozenzweig-MacArthur model -- 
 through Starting R or Rstudio and type:
 
 > require(oshinys)
 
-> RM.app
+> runApp(RM.app)
 
 This should start your browser with the shinyApp running. If you can't see any graphics make sure 
 to maximize the browser window.
@@ -24,4 +24,4 @@ to maximize the browser window.
 If you have devtools installed you can alternatively build the package directly from the github source:
 
 require('devtools')
-devtools::install_github('objornstad/oshinys/source/oshinys')
+devtools::install_github('objornstad/oshinys/source')
