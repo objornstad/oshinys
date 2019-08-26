@@ -1,5 +1,5 @@
 .onAttach <- function(libname, pkgname) {
-packageStartupMessage("Current apps are:\n
+packageStartupMessage("\nCurrent apps are:\n
 lpatribolium.app - LPA Tribolium model\n
 lotkavolterracompetition.app - Lotka-Volterra competion model\n
 lotkavolterrapredation.app - Lotka-Volterra predation model\n
