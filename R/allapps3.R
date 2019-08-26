@@ -161,7 +161,7 @@ lotkavolterracompetition.app=shinyApp(ui = fluidPage(
         }
     
     #sidebar2 {
-      background-color: #ECECEC
+      background-color: #D3D3D3
     }')
   )),
 titlePanel("Lotka-Volterra competition model"),
