@@ -1,7 +1,7 @@
 Package: oshinys
 Title: Shiny Apps to Simulate Various Ecological and Epidemiological Models
-Version: 0.2-1
-Date: 2019-05-02
+Version: 0.2-3
+Date: 2019-08-26
 Author: Ottar N. Bjornstad [aut, cre]
 Maintainer: Ottar N. Bjornstad <onb1@psu.edu>
 Authors@R: person(c("Ottar", "N."), "Bjornstad", email = "onb1@psu.edu", role = c("aut", "cre"))
@@ -11,7 +11,6 @@ Depends:
     shiny,
     scatterplot3d,
     deSolve,
-    phaseR,
     polspline
 License: GPL-3
 URL: https://github.com/objornstad/
