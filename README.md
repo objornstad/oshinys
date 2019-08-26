@@ -7,12 +7,12 @@ The package REQUIRES shiny,
     phaseR and
     polspline R-packages from CRAN to run.
     
-The source of the Apps are in /source/R/allaps3.r
+The source of the Apps are in /source/R/
 ________________________________________
 
 Easisest way to install is from within R do:
 
-install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", "phaseR", devtools))
+install.packages(c("shiny", "deSolve", "scatterplot3d", "polspline", devtools))
 
 require('devtools')
 
